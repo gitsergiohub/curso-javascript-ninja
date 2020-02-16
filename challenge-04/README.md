@@ -140,7 +140,7 @@ carro.pessoas = function(x) {
     if( ndisponivel === 0) {
         return 'O carro esta lotado !' ;
      } else if( x > ndisponivel  ) {
-        ndisponivel > 1 ? cmenssagem = 'Existem apenas ' + ndisponivel + ' lugares no carro.' : cmenssagem =  'Existe apenas ' + ndisponivel + ' lugar no carro';
+        ndisponivel > 1 ? cmenssagem = 'Existem apenas ' + ndisponivel + ' lugares no carro.' : cmenssagem =  'Existe apenas ' + ndisponivel + ' lugar no carro.';
         return cmenssagem ;
      } else {
          x > 0 ? carro.quantidadePessoas += x : carro.quantidadePessoas += 0 ;
