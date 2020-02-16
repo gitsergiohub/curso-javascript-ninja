@@ -9,7 +9,7 @@ para o contrário.
 */
 var isTruthy = function(x) {
     return !!x;
-}
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(0)
@@ -19,6 +19,7 @@ isTruthy(undefined)
 isTruthy('')
 isTruthy()
 isTruthy(false)
+isTruthy(NaN)
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
@@ -31,7 +32,7 @@ isTruthy({})
 isTruthy([])
 isTruthy(-1)
 isTruthy('teste')
-isTruthy(8)
+isTruthy(function() {})
 isTruthy(9)
 isTruthy(10)
 
@@ -63,28 +64,28 @@ passado por parâmetro.
 */
 carro.mudacor = function(novacor) {
     carro.cor = novacor;
-}
+};
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
 carro.obtercor = function() {
     return carro.cor;
-}
+};
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
 carro.obterModelo = function() {
     return carro.modelo;
-}
+};
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
 carro.obterMarca = function() {
     return carro.marca;
-}
+};
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
@@ -94,7 +95,7 @@ Para retornar os valores de marca e modelo, utilize os métodos criados.
 carro.obterMarcaModelo = function() {
     var marcamodelo = 'Esse carro � um ' + carro.obterMarca() + ' ' + carro.obterModelo();
     return marcamodelo;
-}
+};
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
@@ -112,11 +113,12 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
+
 carro.pessoas = function(x) {
     var nocupantes ;
     var nlugares ;
     var ndisponivel;
-    var cmenssagem 
+    var cmenssagem ;
 
     //console.log(x); //mostrar no console o resultado ( equivalente ao conout no advpl )
 
@@ -154,37 +156,37 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-carro.obterCor() // Cinza
+carro.obterCor(); // Cinza
 
 // Mude a cor do carro para vermelho.
-carro.mudacor('vermelho')
+carro.mudacor('vermelho');
 
 // E agora, qual a cor do carro
 'vermelho'
 
 // Mude a cor do carro para verde musgo.
-carro.mudacor('verde musgo')
+carro.mudacor('verde musgo');
 
 // E agora, qual a cor do carro?
 'verde musgo'
 
 // Qual a marca e modelo do carro?
-carro.obterMarcaModelo() // 'Esse carro � um Jaguar r-type'
+carro.obterMarcaModelo(); // 'Esse carro � um Jaguar r-type'
 
 // Adicione 2 pessoas no carro.
-carro.pessoas(2) //Ja temos 2 pessoas no carro
+carro.pessoas(2); //Ja temos 2 pessoas no carro
 
 // Adicione mais 4 pessoas no carro.
-carro.pessoas(4) // Existem apenas 3 lugares no carro
+carro.pessoas(4); // Existem apenas 3 lugares no carro
 
 // Faça o carro encher.
-carro.pessoas(3) //Ja temos 5 pessoas no carro
+carro.pessoas(3); //Ja temos 5 pessoas no carro
 
 // Tire 4 pessoas do carro.
-carro.pessoas(-4)
+carro.pessoas(-4);
 
 // Adicione 10 pessoas no carro.
-carro.pessoas(10) // O Carro ja esta lotado
+carro.pessoas(10); // O Carro ja esta lotado
 
 // Quantas pessoas temos no carro?
 1
