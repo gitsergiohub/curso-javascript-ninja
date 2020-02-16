@@ -126,7 +126,7 @@ carro.pessoas = function(x) {
         return 'O carro esta vazio, não há ocupantes para remover';
     } else if ( x < 0  && x*(-1) > carro.quantidadePessoas ) {
         carro.quantidadePessoas > 1 ? 
-        cmenssagem = 'Existem apenas ' + carro.quantidadePessoas + ' pessoas para serem removidas ' : 
+        cmenssagem = 'Existem apenas ' + carro.quantidadePessoas + ' pessoas para serem removidas.' : 
         cmenssagem = 'Existe apenas ' + carro.quantidadePessoas + ' pessoa para ser removida.'
         return cmenssagem
     } else if( x < 0 ){
